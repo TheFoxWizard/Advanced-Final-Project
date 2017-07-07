@@ -34,10 +34,13 @@ function Albums(props) {
     </div>
   )
   })
+  // .toFixed returns a set decimal to the number
   return (
     <div>
       {albumsDivs}
-      ${total.toFixed(2)}
+        <div className="datTotal">
+          Total $:{total.toFixed(2)}
+        </div>
       <Link className="addButton" to="/CreateThingsContainer">Add Record</Link>
     </div>
   );
