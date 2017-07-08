@@ -7,7 +7,7 @@ function Albums() {
   return (
     <div>
       <div style={{float: "left", width: "33%"}}>
-        <h1>Vehicles</h1>
+        <h1>Albums</h1>
         <AlbumsContainer />
       </div>
       <div style={{float: "left", width: "33%"}}>

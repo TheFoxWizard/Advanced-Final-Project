@@ -31,12 +31,13 @@ class App extends Component {
         <Switch>
           <Route path="/AlbumDetailsContainer/:id" component={AlbumDetailsContainer} />
           <Route path="/CreateThingsContainer" component={CreateThingsContainer} />
-          <Route path="/EditThingsContainer/:id"
-            component={EditThingsContainer} />
+          <Route path="/EditThingsContainer/:id" component={EditThingsContainer} />
           {/* this needs to be last so the others can load*/}
           <Route path="/" component={AlbumsContainer} />
         </Switch>
+        <div className="stopgap">
 
+        </div>
       </div>
     </Router>
     );
