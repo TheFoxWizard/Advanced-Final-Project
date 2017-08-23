@@ -1,7 +1,7 @@
 export function setCurrentAlbum (album) {
-//this object is an action
+// this object is an action
   return {
-    //what the action is representing/setting
+    // what the action is representing/setting
     type:"SET_CURRENT_ALBUM",
     value:album
   }
@@ -17,7 +17,7 @@ export function loadAlbums() {
     });
   };
 }
-//this is loading the record list
+// this is loading the record list
 export function albumsLoaded(id) {
   return function (dispatch) {
     fetch(`/albums/${id}`)
@@ -27,21 +27,21 @@ export function albumsLoaded(id) {
     }));
   };
 }
-//getting the thing
+// getting the thing
 function get_album (album) {
   return {
     type:"GET_ALBUM",
     value: album
   };
 }
-//loading the thing
+// loading the thing
 function albumsLoaded(albums) {
   return {
     type: "ALBUMS_LOADED",
     value: albums
   };
 }
-//creating a new thing & posting it to the the list
+// creating a new thing & posting it to the the list
 export function createAlbum(r) {
   console.log(r);
   return function (dispatch) {
@@ -52,7 +52,7 @@ export function createAlbum(r) {
     }).then(() => dispatch(loadAlbums()));
   };
 }
-//removing the thing
+// removing the thing
 export function removeAlbum(id) {
   return function (dispatch) {
     fetch(`/albums/${id}`, {
@@ -70,7 +70,7 @@ export function editAlbum(id,obj) {
     }).then(() => dispatch(loadAlbums()));
   }
 }
-//the searching of the thing
+// the searching of the thing
 export function setSearchText (text) {
   return {
     type:"SET_SEARCH_TEXT",

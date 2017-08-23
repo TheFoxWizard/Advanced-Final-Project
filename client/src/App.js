@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Sticky from 'react-sticky-el';
 import "./App.css";
 import AlbumsContainer from "./containers/AlbumsContainer";
 import CreateThingsContainer from "./containers/CreateThingsContainer";

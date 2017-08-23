@@ -11,7 +11,7 @@ function mapStateToProps(state) {
   return {albums: state.albums
   }
 }
-//change the album from the vehicle object
+//change the album from the album object
 function mapDispatchToProps(dispatch) {
   return {
     removeAlbum: function(album) {

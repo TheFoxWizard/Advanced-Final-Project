@@ -4,6 +4,7 @@ import editAlbum from "../actions";
 import setCurrentRecord from "../actions";
 import { Link } from 'react-router-dom';
 import EditThingsContainer from "../containers/EditThingsContainer";
+import Sticky from 'react-sticky-el';
 
 // map over the arrary and propagate the record divs
 // the component just needs one thing from props. This is
@@ -42,14 +43,18 @@ function Albums(props) {
   // .toFixed returns a set decimal to a number
   return (
     <div>
-      <h1>My Vinyl Records</h1>
-      <div className="titles-container">
-        <h4 className="titles-item">Artist:</h4>
-        <h4 className="titles-item">Title:</h4>
-        <h4 className="titles-item">Year:</h4>
-        <h4 className="titles-item">Value:</h4>
-        <h4 className="titles-item">Actions:</h4>
+    <Sticky topOffset={0} style={{zIndex: 10}}>
+      <div className="banner-wrapper">
+        <h1 className="banner">My Vinyl Records</h1>
+        <div className="titles-container">
+          <h4 className="titles-item">Artist:</h4>
+          <h4 className="titles-item">Title:</h4>
+          <h4 className="titles-item">Year:</h4>
+          <h4 className="titles-item">Value:</h4>
+          <h4 className="titles-item">Actions:</h4>
+        </div>
       </div>
+    </Sticky>
       {albumsDivs}
         <div className="datTotal">
           Estimated Value: ${total.toFixed(2)}
