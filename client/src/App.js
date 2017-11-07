@@ -5,7 +5,7 @@ import "./App.css";
 import AlbumsContainer from "./containers/AlbumsContainer";
 import CreateThingsContainer from "./containers/CreateThingsContainer";
 import AlbumDetailsContainer from "./containers/AlbumDetailsContainer"
-import EditThingsContainer from "./containers/EditThingsContainer"
+import EditThingsContainer from "./containers/EditThingsContainer";
 import {
   BrowserRouter as Router,
   Route,
