@@ -7,11 +7,7 @@ const app = express();
 
 mongoose.set("debug", true);
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/checkpoint2-again");
-
-// you can name the database whatever
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/checkpoint2-again");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/checkpoint2-again");
 
 app.use(bodyParser.json());
 app.use(AlbumRoutes);
