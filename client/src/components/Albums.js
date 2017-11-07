@@ -4,7 +4,7 @@ import editAlbum from "../actions";
 import setCurrentRecord from "../actions";
 import {Link} from 'react-router-dom';
 import EditThingsContainer from "../containers/EditThingsContainer";
-import Sticky from 'react-sticky-el';
+import Sticky from "react-sticky-el";
 import take from 'lodash/take';
 
 // map over the arrary and propagate the record divs
