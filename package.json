@@ -7,7 +7,8 @@
     "lint": "eslint src",
     "dev": "nodemon --exec 'babel-node src/index'",
     "test": "npm run lint",
-    "start": "nf start"
+    "start": "nf start",
+    "build": "webpack --config webpack.conf.js"
   },
   "keywords": [],
   "author": "phillip alexander meek",
