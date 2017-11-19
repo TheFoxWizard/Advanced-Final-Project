@@ -54,5 +54,8 @@
     "redux-thunk": "^2.2.0",
     "whatwg-fetch": "^2.0.3"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
 }
