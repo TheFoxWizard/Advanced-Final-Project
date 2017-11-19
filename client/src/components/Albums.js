@@ -49,7 +49,7 @@ function Albums(props) {
       </div>
     );
   });
-  // .toFixed returns a set decimal to a number
+  // .toFixed returns a set decimal to a full number
   return (
     <div>
       <Sticky topOffset={0} style={{
