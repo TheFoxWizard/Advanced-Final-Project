@@ -8,7 +8,7 @@
     "dev": "nodemon --exec 'babel-node src/index'",
     "test": "npm run lint",
     "start": "nf start",
-    "build": "webpack --config webpack.conf.js"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "phillip alexander meek",
