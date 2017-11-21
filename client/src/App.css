@@ -230,6 +230,7 @@
 .buttons-container {
   position: relative;
   left: -1.5%;
+  bottom: -10px;
 }
 
 a.addButton {
